@@ -20,3 +20,14 @@ The remaining parts introduce the different parts of the linear and DNN code, ex
  
  
 We use our code to generate predictions, submit our predictions to kaggle, and give the resulting scores. We do this multiple times, experimenting with the effects of the different types of feature engineering and compensation for outlier data, and generate multiple scores for comparison.
+
+If you wish to run this code for yourself you need to download the notebooks (parts 1-9) by cloning this repository. You also need to download the datasets from kaggle (train and test). Create a folder called input in the same location as the notebooks, and place the datasets there.
+
+Using python3 and jupyter to run the notebooks is highly recommended. If you are using conda and python3 in ubuntu, the following commands will setup a python-3.7 environment with the required libraries, and open jupyter:
+
+  - conda create --name tensorflow1-env python=3.7
+  - conda activate tensorflow1-env
+  - conda install jupyter pandas seaborn scikit-learn tensorflow=1.15
+  - jupyter notebook
+
+You can then select a notebook (parts 1-9) and run the code. If you are not running ubuntu or conda or jupyter, you can still see the required python version and libraries in the above commands.
